@@ -3,12 +3,7 @@ name: Webex Events Python Public API SDK
 on:
   push:
     branches:
-      - master
       - main
-
-# on:
-#   release:
-#     types: [created]
 
 jobs:
   pypi-publish:
@@ -16,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://test.pypi.org/p/webex-events
+      url: https://pypi.org/p/webex-events
     permissions:
       id-token: write
     steps:
@@ -24,7 +19,6 @@ jobs:
         with:
           repository: SocioEvents/webex-events-python-sdk
           ref: ${{ env.GITHUB_SHA }}
-          token: ${{ secrets.GH_ORG_PATH }}
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -34,8 +28,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install setuptools wheel
           python -m pip install build twine
-      - name: Build package & publich to pypi
+      - name: Build package & publish to pypi
         run: |
           python -m build
           twine check dist/*
-          twine upload -r testpypi dist/* -u __token__ -p ${{ secrets.PYPI_SECRET}}
+          twine upload -r pypi dist/* -u __token__ -p ${{ secrets.PYPI_SECRET}}
