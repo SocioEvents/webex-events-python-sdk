@@ -3,7 +3,6 @@ name: Webex Events Python Public API SDK
 on:
   push:
     branches:
-      - master
       - main
 
 # on:
@@ -16,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://test.pypi.org/p/webex-events
+      url: https://pypi.org/p/webex-events
     permissions:
       id-token: write
     steps:
