@@ -1,6 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.txt)
-[![Webex Events](https://github.com/SocioEvents/webex-events-python-sdk/actions/workflows/python-package.yml/badge.svg)](https://github.com/SocioEvents/webex-events-python-sdk/actions)
-
+[![Webex Events](https://github.com/SocioEvents/webex-events-python-sdk/actions/workflows/checks.yaml/badge.svg)](https://github.com/SocioEvents/webex-events-python-sdk/actions/workflows/checks.yaml)
 
 [![Webex EVENTS](webex-events-logo-white.svg 'Webex Events')](https://socio.events)
 
