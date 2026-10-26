@@ -1,4 +1,6 @@
+/.idea/modules.xml
 /.idea/inspectionProfiles/Project_Default.xml
+/.idea/webex-events-python-sdk.iml
 /.idea/workspace.xml
 /build/
 /webexevents_sdk.egg-info/

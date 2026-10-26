@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "webex-events"
-version = "1.0.0"
+version = "1.0.1"
 description = "Webex Events SDK"
 readme = "README.md"
 authors = [{ name = "Webex Events", email = "socio-backend.gen@cisco.com" }]
